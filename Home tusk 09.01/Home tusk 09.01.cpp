@@ -39,70 +39,11 @@ int main()
 	cout << "Введите номер месяца в котором хотите вывести " << endl;
 	cin >> n;
 	float sumdollar = (1 / arr1[n - 1]) * (deposit / 100) * arr2[n - 1];
-	switch (n)
-	{
-	case 1:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 <<" $" << endl;
-		}
-		break;
-	case 2:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 3:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 4:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 5:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 6:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 7:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 8:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 9:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 10:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 11:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	case 12:
-		if (sumdollar >= 500) {
-			cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
-		}
-		break;
-	default:
-		break;
+	if (sumdollar >= 500) {
+		cout << "Снять можно : " << (sumdollar) / 2 << " $" << endl;
+	}
+	else {
+		cout << "Нельзя снять сумма % меньше 500 " << " $" << endl;
 	}
 	
 }
